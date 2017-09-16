@@ -58,7 +58,7 @@ over the state-of-the-art in terms of tail-end risk at several physics-based con
 # Teaching Experience
 ## Principles of Machine Learning (CS4011)
 **Aug 2017 - Present; Dept. of CSE, IIT Madras** 
-As one of Teaching Assistants of this course taken by [Professor Balaraman Ravindran](www.cse.iitm.ac.in/~ravi) and [Professor Mitesh Khapra](www.cse.iitm.ac.in/~miteshk).
+As one of Teaching Assistants of this course taken by [Professor Balaraman Ravindran](www.cse.iitm.ac.in/~ravi) and [Professor Mitesh Khapra](www.cse.iitm.ac.in/~miteshk), I create and evaluate tutorials, programming assignments, and quizzes for a class of about 90 undergraduates.
 
 
 # Interests and Hobbies
