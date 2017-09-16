@@ -26,6 +26,20 @@
     <section class="main-content">
       {{ content }}
 
+      <!-- <div class="container-fluid">
+
+        <ul class="social-links">
+          {% for social_link in site.social_links %}
+            {% if social_link[1] != "" %}
+              <li><a href="{{ social_link[1] }}" title="{{ social_link[0] }}">
+                <i class="fa fa-{{ social_link[0] }}" aria-hidden="true"></i>
+              </a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+
+      </div> -->
+
       <footer class="site-footer">
         {% if site.github.is_project_page %}
           <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
@@ -47,25 +61,6 @@
     {% endif %}
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<!-- 
-    <div class="col-md-3 aside">
-      <div class="row">
-        <aside id="sidebar">
-          <section id -->="sidebar-top">
-            <div class="container-fluid">
-
-              <ul class="social-links">
-                {% for social_link in site.social_links %}
-                  {% if social_link[1] != "" %}
-                    <li><a href="{{ social_link[1] }}" title="{{ social_link[0] }}">
-                      <i class="fa fa-{{ social_link[0] }}" aria-hidden="true"></i>
-                    </a></li>
-                  {% endif %}
-                {% endfor %}
-              </ul>
-
-            </div>
-          <!-- </section> -->
 
   </body>
 </html>
