@@ -45,5 +45,19 @@
         ga('send', 'pageview');
       </script>
     {% endif %}
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+    <ul class="social-links">
+      {% for social_link in site.social_links %}
+        {% if social_link[1] != "" %}
+          <li><a href="{{ social_link[1] }}" title="{{ social_link[0] }}">
+            <i class="fa fa-{{ social_link[0] }}" aria-hidden="true"></i>
+          </a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+
   </body>
 </html>

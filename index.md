@@ -1,6 +1,6 @@
 # About Me
 
-Hello World! I am a final year undergraduate student at IIT Madras, pursuing a Dual Degree (B.Tech + M.Tech) in the [Department of Computer Science and Engineering](www.cse.iitm.ac.in) at [IIT Madras](www.iitm.ac.in). I am interested in tackling challenging and practical problems in the broad areas of Deep Learning and Reinforcement Learning, under the guidance of [Professor Balaraman Ravindran](www.cse.iitm.ac.in/~ravi).
+Hello World! I am a final year undergraduate student at [IIT Madras](www.iitm.ac.in), pursuing a Dual Degree (B.Tech + M.Tech) in the [Department of Computer Science and Engineering](www.cse.iitm.ac.in). I am interested in tackling challenging and practical problems in the broad areas of Deep Learning and Reinforcement Learning, under the guidance of [Professor Balaraman Ravindran](www.cse.iitm.ac.in/~ravi).
 
 # Projects
 
@@ -71,19 +71,18 @@ I love watching and playing _the beautiful game_. Come rain or shine, my heart b
 ### Formula 1
 There's hardly anything as spectacular as this confluence of science and engineering which gives the world these lean, mean, and beautiful machines, with some of fittest athletes on the planet battling fearlessly at speeds excessive of 300 kmph over 20 exotic locations. _Forza Ferrari!_  
 
-## Music
+## Books
+If I had to pick one thing I could do all my life, it would be reading. With 3 fat bookshelves overflowing with books back home, and thousands more in my handy Kindle, there are actually times when I am happy to see long queues, presenting another opportunity to dive into my latest book.
 
+## Music
 Beats. Bass. Boisterous. Be it working or working out, EDM is my constant companion. Alan Walker, Fall Out Boy, Green Day, Imagine Dragons, Linkin Park, The Script, Zedd rule my playlist of this renowned bathroom singer. I also tune into old classics once in a while. I wish to make my own remixes someday. 
 
 ## Age of Empires
-
 I grew up building civilisations and plotting the downfall of various others, all the while learning about so much intriguing, medieval history. With countless hours spent on this gripping storyline, exciting gameplay, and its insane popularity, I can't wait for [AOE4](https://www.ageofempires.com/games/age-of-empires-iv/) to come out!
 
 ## Travelling and Photography
-
 I love visiting and documenting quaint, spectacular places, meeting local people, digging into the native cuisine. You can find some of my photos [here](https://www.flickr.com/photos/120844874@N04/). I also love trekking and hiking into the wilderness. After Skydiving, Scuba diving, and Parasailing, I'm looking forward to Hang gliding and Bungee jumping! 
 
 
 # Contact Me
-
 Email ID - `abhisheknaik22296 [at] gmail [dot] com`
