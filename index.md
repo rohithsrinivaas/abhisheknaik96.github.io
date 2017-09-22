@@ -1,6 +1,6 @@
 # About Me
 
-Hello World! I am a final year undergraduate student at [IIT Madras](www.iitm.ac.in), pursuing a Dual Degree (B.Tech + M.Tech) in the [Department of Computer Science and Engineering](www.cse.iitm.ac.in). I am interested in tackling challenging and practical problems in the broad areas of Deep Learning and Reinforcement Learning, under the guidance of [Professor Balaraman Ravindran](www.cse.iitm.ac.in/~ravi).
+Hello World! I am a final year undergraduate student at [IIT Madras](https://www.iitm.ac.in), pursuing a Dual Degree (B.Tech + M.Tech) in the [Department of Computer Science and Engineering](https://www.cse.iitm.ac.in). I am interested in tackling challenging and practical problems in the broad areas of Deep Learning and Reinforcement Learning, under the guidance of [Professor Balaraman Ravindran](https://www.cse.iitm.ac.in/~ravi).
 
 # Projects
 
@@ -58,7 +58,7 @@ over the state-of-the-art in terms of tail-end risk at several physics-based con
 # Teaching Experience
 ## Principles of Machine Learning (CS4011)
 **Aug 2017 - Present; Dept. of CSE, IIT Madras** 
-As one of Teaching Assistants of this course taken by [Professor Balaraman Ravindran](www.cse.iitm.ac.in/~ravi) and [Professor Mitesh Khapra](www.cse.iitm.ac.in/~miteshk), I create and evaluate tutorials, programming assignments, and quizzes for a class of about 90 undergraduates.
+As one of Teaching Assistants of this course taken by [Professor Balaraman Ravindran](www.cse.iitm.ac.in/~ravi) and [Professor Mitesh Khapra](https://www.cse.iitm.ac.in/~miteshk), I create and evaluate tutorials, programming assignments, and quizzes for a class of about 90 undergraduates.
 
 
 # Interests and Hobbies
