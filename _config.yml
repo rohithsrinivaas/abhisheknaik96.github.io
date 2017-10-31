@@ -4,6 +4,10 @@ theme: jekyll-theme-cayman
 title: [Abhishek Naik]
 description: [Has the mind of a techie and the heart of a wanderer.]
 
+include: ['_posts', '_pages']
+
+baseurl: ""
+
 social_links:
   github: "https://github.com/abhisheknaik96/"
   twitter: "https://twitter.com/anaik96"

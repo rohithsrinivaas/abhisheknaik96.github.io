@@ -1,0 +1,29 @@
+---
+layout: clean
+title: Posts
+permalink: posts_all
+---
+
+<div class="sidebar sticky">
+
+  <nav class="nav__list">
+    
+        <!-- <li> -->
+          
+        <!-- <span class="nav__sub-title">The list</span> -->
+          
+          <ul>
+            
+            {% for post in site.posts %}  <!-- If required, site.posts.reverse -->
+
+              <li><a href="{{ post.permalink }}" class=""> {{ post.title }} </a></li>
+
+            {% endfor %}
+
+          </ul>
+          
+        <!-- </li> -->
+      
+    </ul>
+  </nav>
+</div>

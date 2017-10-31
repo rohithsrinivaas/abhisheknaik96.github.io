@@ -1,0 +1,7 @@
+posts:
+  - title: Posts
+    children:
+      - title: "The First"
+        url: /_posts/2017-10-30-TheFirst.html
+      # - title: "Upgrading"
+      #   url: /docs/upgrading/
