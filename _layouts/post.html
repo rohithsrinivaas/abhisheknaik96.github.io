@@ -4,15 +4,6 @@ sidebar:
   nav: "posts"
 ---
 
-<style>
-  .date {
-     margin-top: 1.5cm;
-     font-size: 4mm
-     /*font-family: "Times New Roman", Times, serif; */
-  }
-</style>
-
-
 <article class="post">
   <h1>{{ page.title }}</h1>
 
@@ -27,5 +18,12 @@ sidebar:
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}, {{ page.time }}
   </div>
+
+  <div class="wrapper">
+  <!-- <button class="myButton" href="Home"> 
+    Back to Home
+  </button> -->
+  <a href="../AllPosts" class="myButton">Back</a>
+</div>
 
 </article>

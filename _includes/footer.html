@@ -1,0 +1,33 @@
+
+<!-- ToDo : This is not working... Apparently the function never takes place... -->
+
+<script type="text/javascript">
+
+  $('body').scrollspy({target: '#home-sidenav', offset: 183});
+
+  $(window).on('scroll', function (event) 
+  {
+     var SIDENAV_OFFSET = 140;
+     var scroll_pos = $(window).scrollTop();
+     window.alert(5 + 6);
+     
+     if (scroll_pos > SIDENAV_OFFSET ) 
+        $("#home-sidenav").addClass('affix-top');
+     else
+        $("#home-sidenav").removeClass('affix-top');
+     
+  });  
+  // $(function()
+  // {
+  //   var hasBeenTrigged = false;
+  //   $(window).scroll(function() 
+  //   {
+  //       if ($(this).scrollTop() >= 100 && !hasBeenTrigged) 
+  //       { // if scroll is greater/equal then 100 and hasBeenTrigged is set to false.
+  //           alert("You've scrolled 100 pixels.");
+  //           hasBeenTrigged = true;
+  //       }
+  //   });
+  // });
+
+</script>

@@ -1,15 +1,17 @@
 ---
-title: Abhishek Naik
+title: Home
 layout: default
 ---
 
 <!-- # {{ page.title }} -->
 
-# About Me
+# [About Me](#about-me) 
 
 Hello World! I am a final year undergraduate student at [IIT Madras](https://www.iitm.ac.in), pursuing a Dual Degree (B.Tech + M.Tech) in the [Department of Computer Science and Engineering](https://www.cse.iitm.ac.in). I am interested in tackling challenging and practical problems in the broad areas of Deep Learning and Reinforcement Learning, under the guidance of [Professor Balaraman Ravindran](https://www.cse.iitm.ac.in/~ravi).
 
-# Projects
+***
+
+# [Projects](#projects)
 
 Here are some selected projects I have done over the course of my undergraduate studies.
 
@@ -37,8 +39,9 @@ Captured the 4D light field from a scene and implemented features like refocusin
 
 Built a prototype for the institute gate using Computer Vision techniques to categorize and keep and count of the flowing traffic in dynamic lighting conditions. 
 
+***
 
-# Work Experience
+# [Work Experience](#workExperience)
 
 ## Intel Labs
 **Research Internship; May 2017 – Jul 2017; Bengaluru, India**
@@ -61,14 +64,17 @@ over the state-of-the-art in terms of tail-end risk at several physics-based con
 - Worked on the design and implementation of a machine learning classifier to determine the relevance of a text-block with a bunch of other text-blocks, in a book.
 - The project, now in production, helps Kindle users to directly start reading a book after downloading it, without having to flip through a lot of irrelevant pages.
 
+***
 
-# Teaching Experience
+# [Teaching Experience](#teachingExperience)
 ## Principles of Machine Learning (CS4011)
 **Aug 2017 - Present; Dept. of CSE, IIT Madras** 
-As one of Teaching Assistants of this course taken by [Professor Balaraman Ravindran](www.cse.iitm.ac.in/~ravi) and [Professor Mitesh Khapra](https://www.cse.iitm.ac.in/~miteshk), I create and evaluate tutorials, programming assignments, and quizzes for a class of about 90 undergraduates.
 
+- As one of Teaching Assistants of this course taken by [Professor Balaraman Ravindran](www.cse.iitm.ac.in/~ravi) and [Professor Mitesh Khapra](https://www.cse.iitm.ac.in/~miteshk), I create and evaluate tutorials, programming assignments, and quizzes for a class of about 90 undergraduates.
 
-# Interests and Hobbies
+***
+
+# [Interests and Hobbies](#everythingElse)
 
 ## Sports
 
@@ -90,6 +96,7 @@ I grew up building civilisations and plotting the downfall of various others, al
 ## Travelling and Photography
 I love visiting and documenting quaint, spectacular places; meeting local people; digging into the native cuisine. You can find some of my photos [here](https://www.flickr.com/photos/120844874@N04/). I also love trekking and hiking into the wilderness. After Skydiving, Scuba diving, and Parasailing, I'm looking forward to Hang gliding and Bungee jumping! 
 
+***
 
-# Contact Me
+# [Contact Me](#contact-me)
 Email ID - `abhisheknaik22296 [at] gmail [dot] com`
