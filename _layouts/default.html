@@ -12,6 +12,10 @@
     <meta name="theme-color" content="#157878">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/social.css">
+    <!-- <link rel="stylesheet" href="../css/bootstrap-social.css"> -->
+    <!-- <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   
@@ -70,6 +74,40 @@
 
     <!-- </div>
   </div> -->
+
+<!--   	<a class="btn btn-social-icon btn-twitter">
+    	<span class="fa fa-twitter"></span>
+  	</a>
+ -->
+ 	<div class="row footer-social" align="center">
+ 		
+ 		{% for social_link in site.social_links %}
+            {% if social_link[1] != "" %}
+	 			<a href="{{ social_link[1] }}" class="azm-btn azm-social azm-size-48 azm-pill azm-{{ social_link[0] }}"><i class="fa fa-{{ social_link[0] }}"></i></a>
+            {% endif %}
+          {% endfor %}
+
+ 	</div>
+         <!-- <a href="#" class="btn azm-goodreads"><i class="fa fa-goodreads"></i>g</a> -->
+
+    <!-- <div class="footer-social">
+      <div class="container text-center">
+
+        <ul class="list-inline">
+          {% for social_link in site.social_links %}
+            {% if social_link[1] != "" %}
+              <li class="list-inline-item {{ social_link[0] }}" >
+                <a class="btn btn-social-icon btn-{{ social_link[1] }}">
+    				<span class="fa fa-{{ social_link[0] }}"></span>
+  				</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+
+      </div>
+    </div> -->
+
     <!-- <div class="footer-social">
       <div class="container text-center">
 

@@ -82,3 +82,28 @@
     float: right;
     font-size: 5em;
   }*/
+
+
+  .footer-social
+  {
+    font-size: 2em;
+    /*padding: 13px 17px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .footer-social a 
+  {
+    text-decoration: none;
+    /*padding-right: 13px;*/
+    /*padding-left: 13px;*/
+    transition: all .2s ease-in-out;
+  }
+
+  .footer-social a:hover, a:focus 
+  {
+    transform: scale(1.15);
+    outline: 0px solid transparent;
+    transition: all .5s ease-in-out;
+  }
