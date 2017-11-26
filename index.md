@@ -11,6 +11,31 @@ Hello World! I am a final year undergraduate student at [IIT Madras](https://www
 
 ***
 
+# [Work Experience](#workExperience)
+
+## Intel Labs
+**Research Internship; May 2017 – Jul 2017; Bengaluru, India**
+
+- Developed a multi-agent version of the TORCS driving simulator compatible with Gym, OpenAI’s RL toolkit.
+- Proposed and implemented a novel risk-averse imitation learning framework, achieving upto 89% improvement over the state-of-the-art in terms of tail-end risk at several physics-based control tasks.
+-  [This project](https://arxiv.org/abs/1707.06658) has been accepted for presentation at the [**NIPS 2018 Deep Reinforcement Learning Symposium**](https://sites.google.com/view/deeprl-symposium-nips2017).
+
+## Purdue University
+**Research Internship; May 2016 – Jul 2016; Indiana, USA**
+
+- Modeled and empirically observed a bi-modal distribution of user-lifespan in a social network.
+- Engineered temporal features from the ‘comment’ interactions to design a binary probabilistic classifier to categorise the expected lifespan of new users based on their initial activity.
+- Created and curated one of the richest social-media datasets and released it for public use via [a technical paper](https://arxiv.org/abs/1703.03401).
+
+## Amazon Development Centre
+**Technical Internship; May 2015 – Jul 2015; Chennai, India**
+
+- Worked on the design and implementation of a machine learning classifier to determine the relevance of a text-block with a bunch of other text-blocks, in a book.
+- The project, now in production, helps Kindle users to directly start reading a book after downloading it, without having to flip through a lot of irrelevant pages.
+-  A *patent* has been filed for the same.
+
+***
+
 # [Projects](#projects)
 
 Here are some selected projects I have done over the course of my undergraduate studies.
@@ -18,7 +43,7 @@ Here are some selected projects I have done over the course of my undergraduate 
 ## Driving in Traffic with Deep Reinforcement Learning
 - Jan 2017 – May 2017
 
-Used a Deep Learning model to detect and predict features from the on-board dashcam of a car, and trained a Reinforcement Learning model to make driving decisions to successfully drive in traffic.
+Used a Deep Learning model to detect and predict features from the on-board dashcam of a car, and trained a Reinforcement Learning model to make driving decisions to successfully [drive in traffic](https://www.youtube.com/playlist?list=PL64VfM4ZEjDvlALjskRm0g4Tfay14_I2r).
 
 ## Finding the Salient Object in a Visual Scene 
 - Jan 2017 – May 2017
@@ -38,31 +63,6 @@ Captured the 4D light field from a scene and implemented features like refocusin
 ## Vehicle Counter and Segregator
 
 Built a prototype for the institute gate using Computer Vision techniques to categorize and keep and count of the flowing traffic in dynamic lighting conditions. 
-
-***
-
-# [Work Experience](#workExperience)
-
-## Intel Labs
-**Research Internship; May 2017 – Jul 2017; Bengaluru, India**
-
-- Developed a multi-agent version of the driving simulator TORCS and integrated it with Gym, OpenAI’s RL toolkit.
-- Proposed and implemented a novel risk-averse imitation learning algorithm, achieving 22 to 89% improvement
-over the state-of-the-art in terms of tail-end risk at several physics-based control tasks.
-- This Deep Reinforcement Learning project is under review as a conference paper.
-
-## Purdue University
-**Research Internship; May 2016 – Jul 2016; Indiana, USA**
-
-- Modeled and empirically observed a bi-modal distribution of user-lifespan in a social network.
-- Engineered temporal features from the ‘comment’ interactions to design a binary probabilistic classifier to categorise the expected lifespan of new users based on their initial activity.
-- Created and curated one of the richest social-media datasets and released it for public use.
-
-## Amazon Development Centre
-**Technical Internship; May 2015 – Jul 2015; Chennai, India**
-
-- Worked on the design and implementation of a machine learning classifier to determine the relevance of a text-block with a bunch of other text-blocks, in a book.
-- The project, now in production, helps Kindle users to directly start reading a book after downloading it, without having to flip through a lot of irrelevant pages.
 
 ***
 
