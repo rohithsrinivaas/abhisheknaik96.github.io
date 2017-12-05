@@ -25,7 +25,11 @@
       <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
       
-      <!-- <a href=index class="btn">About Me</a> -->
+      <a href=index class="btn">About Me</a>
+      <a href=WorkExperience class="btn">Work Experience</a>
+      <a href=EverythingElse class="btn">My Hobbies</a>
+      <a href=Projects class="btn">Projects</a>
+      <a href=ContactMe class="btn">Contact Me</a>
       <a href="AllPosts" class="btn">Blog</a>
 
       {% if site.github.is_project_page %}
@@ -39,10 +43,8 @@
 
     <section class="main-content">
       <div class="row">
-        <!-- <div class="column-left affix-top"> -->
-          <div class="column-left">
+          <!-- <div class="column-left">
           <ul class="nav flex-column sidenav" id="home-sidenav">
-          <!-- <ul data-spy="affix-top" data-offset-top="53" class=" nav flex-column sidenav affix-top" id="home-sidenav"> -->
           <h3> Navigation </h3>
             <li class="nav-item">
               <a class="nav-link " href="#about-me"> About Me </a>
@@ -64,7 +66,7 @@
             </li>
           </ul>
 
-        </div>
+        </div> -->
         
         <div class="column-right">
           {{ content }}
