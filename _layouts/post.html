@@ -33,7 +33,8 @@
       <hr>
 
       <div class="date">
-        Written on {{ page.date | date: "%B %e, %Y" }}, {{ page.time }}
+        Written on {{ page.date | date: "%B %e, %Y" }} +{{ page.time }} <br>
+        Last updated on {{ page.update | date: "%B %e, %Y" }}
       </div>
 
       <div class="wrapper">
