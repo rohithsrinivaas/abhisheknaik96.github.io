@@ -38,3 +38,10 @@ From a recent NY Times article titled [Leave A.I. Alone](https://www.nytimes.com
 
 > ... the recent report released by the AI Now Institute ... acknowledges that no commonly accepted definition of A.I. exists, which it describes loosely as "a broad assemblage of technologies ... that have traditionally relied on human capacities."    
 > "Artificial intelligence" is all too frequently used as a shorthand for software that simply does what humans used to do. But replacing human activity is precisely what new technologies accomplish — spears replaced clubs, wheels replaced feet, the printing press replaced scribes, and so on. What’s new about A.I. is that this technology isn’t simply replacing human activities, external to our bodies; it’s also replacing human decision-making, inside our minds.
+
+My mindset aligns perfectly with these thoughts. I believe [Elon Musk](https://www.theguardian.com/technology/2017/aug/14/elon-musk-ai-vastly-more-risky-north-korea) and [Stephen Hawking](https://www.usatoday.com/story/tech/talkingtech/2017/11/07/hawking-ai-could-worst-event-history-our-civilization/839298001/) are possibly inadvertently creating a fear of a Hollywood-esque AI-apocalypse in the minds of the general public, who hang on to words of visionaries like those. Yes, I agree there should some regulations on what and where and to what extent AI should or can be incorporated in our daily lives, most notably in critical areas like defense and nuclear safety, but as [Andrew NG puts it brilliantly](https://www.theregister.co.uk/2015/03/19/andrew_ng_baidu_ai/):
+
+> "There's a big difference between intelligence and sentience. There could be a race of killer robots in the far future, but I don’t work on not turning AI evil today for the same reason I don't worry about the problem of overpopulation on the planet Mars.
+> "If we colonize Mars, there could be too many people there, which would be a serious pressing issue. But there's no point working on it right now, and that's why I can’t productively work on not turning AI evil." 
+
+Go AI!    
