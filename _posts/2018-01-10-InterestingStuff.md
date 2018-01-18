@@ -5,6 +5,7 @@ date : 2018-01-10
 time : +2136
 update : 2018-01-11
 permalink : posts/AItidbits
+summary : A collection of interesting AI tidbits.
 <!-- published: false -->
 ---
 

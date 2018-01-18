@@ -10,7 +10,13 @@ permalink: AllPosts
           <ul>
             
             {% for post in site.posts %}  <!-- If required, site.posts.reverse -->
-              <li><a href="{{ post.permalink }}" class=""> {{ post.title }} </a></li>
+              <li>
+              	<div style="padding-bottom: 10px !important;">
+              	<a href="{{ post.permalink }}"> {{ post.title }} </a><br>
+              	{{ post.summary }}
+              	</div>
+              </li>
+              <!-- <br> -->
             {% endfor %}
 
           </ul>
