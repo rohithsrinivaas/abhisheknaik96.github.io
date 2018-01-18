@@ -29,7 +29,13 @@ layout: default
 ***
 
 # [Teaching Experience](#teachingExperience)
+
 ## Principles of Machine Learning (CS4011)
-**Aug 2017 - Present; Dept. of CSE, IIT Madras** 
+**Aug 2017 - Nov 2017; Dept. of CSE, IIT Madras** 
 
 - As one of Teaching Assistants of this course taken by [Professor Balaraman Ravindran](www.cse.iitm.ac.in/~ravi) and [Professor Mitesh Khapra](https://www.cse.iitm.ac.in/~miteshk), I create and evaluate tutorials, programming assignments, and quizzes for a class of about 90 undergraduates.
+
+## Reinforcement Learning (CS6700)
+**Jan 2018 - Present; Dept. of CSE, IIT Madras** 
+
+- As one of Teaching Assistants of this course taken by [Professor Balaraman Ravindran](www.cse.iitm.ac.in/~ravi), I create and evaluate tutorials, programming assignments, and exams for a class of about 90 undergraduates and postgraduates.
