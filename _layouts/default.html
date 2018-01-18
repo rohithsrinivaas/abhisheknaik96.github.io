@@ -17,6 +17,7 @@
     <!-- <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"> -->
     <!-- <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
   </head>
   
   <body data-spy="column-left" data-target="#home-sidenav" data-offset-top="183">
@@ -25,12 +26,12 @@
       <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
       
-      <a href=index class="btn" color="#008CBA">About Me</a>
+      <a href=index class="btn">About Me</a>
       <a href=WorkExperience class="btn">Work Experience</a>
-      <a href=EverythingElse class="btn">My Hobbies</a>
+      <a href="AllPosts" class="btn" style="border-color:rgba(0, 255, 0, 0.8)!important; background-color:rgba(0, 255, 255, 0.3)!important;">Blog</a>
       <a href=Projects class="btn">Projects</a>
+      <a href=EverythingElse class="btn">My Hobbies</a>
       <a href=ContactMe class="btn">Contact Me</a>
-      <a href="AllPosts" class="btn">Blog</a>
 
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
