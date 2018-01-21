@@ -35,7 +35,9 @@
 
       <div class="date">
         Written on {{ page.date | date: "%B %e, %Y" }} +{{ page.time }} <br>
+        {% if page.update %}
         Last updated on {{ page.update | date: "%B %e, %Y" }}
+        {% endif %}
       </div>
 
       <div class="wrapper">
