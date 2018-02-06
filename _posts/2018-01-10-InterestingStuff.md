@@ -16,6 +16,13 @@ Here are some interesting AI tidbits that I come across every other day.
 <hr>
 <hr>
 
+<!-- - 29/1/2018    
+
+[This great talk](http://www.iro.umontreal.ca/~bengioy/talks/COGSCI-23july2014.pdf) by Yoshua Bengio offers a great intuition of curriculum learning inspired from humans. He also goes on to propose how new ideas and cultures emerge over time, via the sharing of mid-level abstractions of the brain via the means of language. 
+ -->
+<hr>
+<hr>
+
 - 26/1/2018
 
 So there was [another Tesla-crash](https://twitter.com/CC_Firefighters/status/955529991319560192) this week. Into a big, red, stationary fire-truck. What?! How can state-of-the-art autonomous driving technology not avoid something as obviously blatant as that?!    
