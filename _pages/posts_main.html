@@ -6,20 +6,47 @@ permalink: AllPosts
 
 <div class="sidebar sticky">
   <nav class="nav__list">
-    
-          <ul>
-            
+
+    <ul>
+           
+	      <li>
+                <div style="padding-bottom: 10px !important;">
+                <a href="{{ post.permalink }}"> OpEds </a><br>
+                    My take on things that pique my interest.
+                
+	                <ul>
+
+						{% for post in site.posts %}
+			            {% if post.oped == true %}
+				        <li>
+				                <div style="padding-left: 10px !important;">
+				                <a href="{{ post.permalink }}"> {{ post.title }} </a><br>
+				                {{ post.summary }} 
+				                </div>
+						</li>
+			            {% endif %}
+			            {% endfor %}
+
+			        </ul>
+
+				</div>
+           </li>
+	
+			<hr>
+ 
             {% for post in site.posts %}  <!-- If required, site.posts.reverse -->
-              <li>
-              	<div style="padding-bottom: 10px !important;">
+	      	<!-- {{ post.tags }} -->
+	      	{% if post.oped != true %}
+	      	<li>
+              	<div>
               	<a href="{{ post.permalink }}"> {{ post.title }} </a><br>
               	{{ post.summary }}
               	</div>
-              </li>
-              <!-- <br> -->
+            </li><hr>
+            {% endif %}
             {% endfor %}
 
-          </ul>
+	</ul>
   </nav>
 </div>
 

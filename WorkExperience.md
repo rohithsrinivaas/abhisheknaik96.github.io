@@ -10,7 +10,7 @@ layout: default
 
 - Developed a multi-agent version of the TORCS driving simulator compatible with Gym, OpenAI’s RL toolkit.
 - Proposed and implemented a novel risk-averse imitation learning framework, achieving upto 89% improvement over the state-of-the-art in terms of tail-end risk at several physics-based control tasks.
--  [This project](https://arxiv.org/abs/1707.06658) will be presented at [AAMAS 2018](http://celweb.vuse.vanderbilt.edu/aamas18/).
+-  [This project](https://arxiv.org/abs/1707.06658) will be presented at [**AAMAS 2018**](http://celweb.vuse.vanderbilt.edu/aamas18/).
 <!---
 [**NIPS 2017 Deep Reinforcement Learning Symposium**](https://sites.google.com/view/deeprl-symposium-nips2017).
 -->
