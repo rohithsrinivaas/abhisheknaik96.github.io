@@ -6,15 +6,12 @@ time : +2136
 update : 2018-01-11
 permalink : posts/AItidbits
 summary : A collection of interesting AI tidbits.
-<!-- published: false -->
+published: false
 ---
 
 Hello, world.   
 
 Here are some interesting AI tidbits that I come across every other day.
-
-<hr>
-<hr>
 
 <!-- - 29/1/2018    
 
