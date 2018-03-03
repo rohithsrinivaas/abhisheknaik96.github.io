@@ -61,7 +61,7 @@
     <!-- <link rel="stylesheet" href="../css/bootstrap-social.css"> -->
     <!-- <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"> -->
     <!-- <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css"> -->
-    <link rel="stylesheet" href="/assets/css/style.css?v=bfd2c3d1181bf0d01e57039c363ea75237d4ab3d">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
   </head>
   
@@ -79,8 +79,6 @@
       <a href=ContactMe class="btn">Contact Me</a>
 
      <!--  
-        <a href="http://github.com/abhisheknaik96/abhisheknaik96.github.io" class="btn">View on GitHub</a>
-      
        -->
     </section>
 
@@ -126,19 +124,17 @@
 <ul>
   <li>Set up MuJoCo on your machine.</li>
   <li>Install Anaconda Python 2.7 and set it as the default python:
-    <div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"/home/username/anaconda3/bin:</span><span class="nv">$PATH</span><span class="s2">"</span>
-<span class="gp">$ </span>which python
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"/home/username/anaconda3/bin:</span><span class="nv">$PATH</span><span class="s2">"</span>
+<span class="nv">$ </span>which python
 /home/username/anaconda3/bin/python
-</code></pre>
-    </div>
+</code></pre></div>    </div>
     <p>Make changes in the <code class="highlighter-rouge">.bashrc</code> for permanent results.</p>
   </li>
   <li>Install the required packages.
-    <div class="language-bash highlighter-rouge"><pre class="highlight"><code>pip install mujoco-py
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install mujoco-py
 pip install theano
 pip install gym
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Clone the OpenAI-imitation (GAIL) repository.
@@ -153,21 +149,18 @@ pip install gym
   <li>Make a new directory called trajectories in the RAIL repository.</li>
   <li>Generate expert trajectories from an expert policy using <code class="highlighter-rouge">scripts/vis_mj.py</code> <br />
 Example usage :
-    <div class="highlighter-rouge"><pre class="highlight"><code>username@machine:/path/to/RAIL$ python scripts/vis_mj.py expert_policies/modern/log_Hopper-v1_4.h5/snapshots/iter0000500 --count 25 --out trajectories/expert/hopper_25.h5
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@machine:/path/to/RAIL$ python scripts/vis_mj.py expert_policies/modern/log_Hopper-v1_4.h5/snapshots/iter0000500 --count 25 --out trajectories/expert/hopper_25.h5
+</code></pre></div>    </div>
   </li>
   <li>Run <code class="highlighter-rouge">scripts/imitate_mj.py</code> with flags set for GAIL/RAIL
 Example usage of RAIL :
-    <div class="highlighter-rouge"><pre class="highlight"><code>username@machine:/path/to/RAIL$ python scripts/imitate_mj.py --mode ga --data trajectories/expert/hopper_25.h5 --limit_trajs 25 --data_subsamp_freq 20 --env_name Hopper-v1 --log training_logs/Hopper/ga_501-iter_Hopper_CVaR_lambda_0.5.h5 --max_iter 501 --useCVaR --CVaR_Lambda_not_trainable --CVaR_Lambda_val_if_not_trainable 0.5`
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@machine:/path/to/RAIL$ python scripts/imitate_mj.py --mode ga --data trajectories/expert/hopper_25.h5 --limit_trajs 25 --data_subsamp_freq 20 --env_name Hopper-v1 --log training_logs/Hopper/ga_501-iter_Hopper_CVaR_lambda_0.5.h5 --max_iter 501 --useCVaR --CVaR_Lambda_not_trainable --CVaR_Lambda_val_if_not_trainable 0.5`
+</code></pre></div>    </div>
   </li>
   <li>Evaluate using <code class="highlighter-rouge">scripts/evaluate.py</code>. It has various functions to calculate metrics like VaR, CVaR as well for plotting different types histograms. <br />
 Example usage :
-    <div class="highlighter-rouge"><pre class="highlight"><code>python scripts/evaluate.py --trajectories_GAIL trajectories/Hopper/hopper_GAIL_25.h5 --trajectories_CVaR trajectories/Hopper/hopper_RAIL_25.h5 --env_name Hopper --percentile 10 --expert_mean 3666.88 --expert_std 392.908 --trajectories_expert trajectories/Hopper/hopper_expert_25.h5
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python scripts/evaluate.py --trajectories_GAIL trajectories/Hopper/hopper_GAIL_25.h5 --trajectories_CVaR trajectories/Hopper/hopper_RAIL_25.h5 --env_name Hopper --percentile 10 --expert_mean 3666.88 --expert_std 392.908 --trajectories_expert trajectories/Hopper/hopper_expert_25.h5
+</code></pre></div>    </div>
   </li>
 </ul>
 
@@ -298,9 +291,7 @@ Example usage :
     </div> -->
 
       <footer class="site-footer">
-        <!-- 
-          <span class="site-footer-owner"><a href="http://github.com/abhisheknaik96/abhisheknaik96.github.io">abhisheknaik96.github.io</a> is maintained by <a href="http://github.com/abhisheknaik96">abhisheknaik96</a>.</span>
-         -->
+        <!--  -->
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
       </footer>
     

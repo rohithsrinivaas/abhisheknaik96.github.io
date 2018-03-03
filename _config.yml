@@ -18,4 +18,6 @@ social_links:
 
 plugins:
   - jekyll-twitter-plugin
+
+github: [metadata]
 ---
