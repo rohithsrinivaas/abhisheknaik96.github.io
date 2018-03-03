@@ -15,4 +15,7 @@ social_links:
   flickr: "https://www.flickr.com/photos/120844874@N04/"
   # quora: "https://www.quora.com/profile/Abhishek-Naik-20/"
   # goodreads: "https://www.goodreads.com/user/show/41821528-abhishek-naik"
+
+plugins:
+  - jekyll-twitter-plugin
 ---

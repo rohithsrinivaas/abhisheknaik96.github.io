@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+    <!-- <meta name="description" content="Has the mind of a techie and the heart of a wanderer."/> -->
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <!-- <link rel="stylesheet" href="post.css"> -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=bfd2c3d1181bf0d01e57039c363ea75237d4ab3d">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name"> Random Musings </h1>
+      <!-- <h2 class="project-tagline">Has the mind of a techie and the heart of a wanderer.</h2> -->
+    </section>
+
+    <section class="main-content">
+
+
+    <article class="post">
+      <h1>Summary - DRL doesn't work, yet.</h1>
+
+      <hr>
+
+      <div class="entry">
+        <p>This post is a summary of the extremely insightful blog - <a href="https://www.alexirpan.com/2018/02/14/rl-hard.html">Deep Reinforcement Learning Doesn’t Work Yet</a> - that is making the rounding on twitter since it came out a couple of weeks ago.</p>
+
+<hr />
+
+<h2 id="training-times-are-mind-numbingly-large">Training times are mind-numbingly large.</h2>
+<ul>
+  <li>ATARI : Average &gt;20 million frames (~100 hours of continuous play, for which humans take a few minutes to master.</li>
+  <li>MuJoCo : 10<sup>5</sup>-10<sup>7</sup> steps. DeepMind’s parkour suite results, though super-cool, took 6400 CPU hours.</li>
+  <li><strong>Takeaway</strong> : DRL is still orders of magnitude above a practical level of sample efficiency.\s\s</li>
+</ul>
+
+<h2 id="classical-control-theory-methods-obliterate-drl-in-many-tasks-in-terms-of-final-performance">Classical control-theory methods obliterate DRL in many tasks in terms of final performance</h2>
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=uRVAX_sFT24">Here is a video</a> of the MuJoCo robots, controlled with online trajectory optimization. Correct actions are computed in near real-time, online, with no offline training. Oh, and it’s running on 2012 hardware. :P :P
+    <ul>
+      <li>Does that mean all our lives have been lies? Not really. <a href="https://homes.cs.washington.edu/~todorov/papers/TassaIROS12.pdf">Tassa et al, IROS 2012</a> use model predictive control, which gets to perform planning against a ground-truth world model (the physics simulator). Model-free RL doesn’t do this planning, and therefore has a much harder job. But one could argue, if planning against a model helps this much, why even bother with the bells and whistles of training an RL policy?</li>
+    </ul>
+  </li>
+  <li>In the same vein, off-the-shelf Monte Carlo Tree Search outperforms the standard DQN by a large margin. Again, this is not a fair comparison MCTS gets to perform search against a ground truth model (the Atari emulator). But then again, sometimes you just want things to work.</li>
+  <li>The rule-of-thumb is that except in rare cases, domain-specific algorithms work faster and better than reinforcement learning. Which is why AlphaGo was such a big win for DRL, because unambiguous wins like these don’t happen very often.</li>
+  <li>Similarly, <a href="https://www.youtube.com/channel/UC7vVhkEfw4nOGp8TyDk7RcQ">Boston Dynamics</a> <strong>does not use any RL</strong>. Yeah. Just classical robotics techniques.</li>
+</ul>
+
+<h2 id="rl-requires-reward-functions-which-are-1-difficult-to-design-2-hard-to-get-to-work">RL requires reward functions, which are (1) difficult to design, (2) hard to get to work</h2>
+<ul>
+  <li>For RL to do the right thing, your reward function must capture exactly what you want.</li>
+  <li>If it doesn’t, the agent might end up learning behaviors <a href="https://youtu.be/8QnD8ZM0YCo?t=25">completely</a> <a href="https://www.youtube.com/watch?v=tlOIHko8ySg">different</a> than what was expected, because the agent blindly optimizes to maximize the obtained reward.</li>
+  <li>One way of addressing this is to make the reward sparse, giving a positive reward <em>only</em> when the final goal is achieved. This works well for certain (rather simple) tasks, but in tasks like navigating a maze, or dribbling to score a goal, this sparse</li>
+  <li>The other way is reward-shaping (aka reward-hacking), wherein we put all our domain knowledge to use to come up with these Byzantine reward functions from hell which need an eternity to tune in order to get the ‘expected’ behavior.</li>
+  <li>Even so, one could end up in local minimas that are hard to escape from (i.e. unintended behavior). This is a result of the classic exploration-exploitation dilemma - if your current policy explores too much you get junk data and learn nothing; exploit too much and you ‘burn-in’ behaviors that aren’t optimal.</li>
+  <li><strong>Takeaway</strong>:
+    <blockquote>
+      <p>I’ve taken to imagining deep RL as a demon that’s deliberately misinterpreting your reward and actively searching for the laziest possible local optima. It’s a bit ridiculous, but I’ve found it’s actually a productive mindset to have.</p>
+    </blockquote>
+  </li>
+</ul>
+
+<h2 id="when-drl-works-it-has-generally-overfit">When DRL works, it has generally overfit.</h2>
+<ul>
+  <li>As <a href="https://twitter.com/jacobandreas/status/924356906344267776">this tweet</a> rightly points out:
+    <blockquote>
+      <p>Deep RL is popular because it’s the only area in ML where it’s socially acceptable to train on the test set.</p>
+    </blockquote>
+  </li>
+  <li>The generalization capabilities of deep RL aren’t strong enough to handle a diverse set of tasks yet.</li>
+  <li>Very few target generalisability (aka transfer). Most results with superb performance (superhuman or otherwise) can do so because they’ve overfit like crazy</li>
+  <li>This seems to be a running theme in multiagent RL. When agents are trained against one another, a kind of co-evolution happens. The agents get really good at beating each other, but when they get deployed against an unseen player, performance drops.</li>
+  <li>The author goes on to say - <em>if your agents are learning at the same pace, they can continually challenge each other and speed up each other’s learning, but if one of them learns much faster, it exploits the weaker player too much and overfits. As you relax from symmetric self-play to general multiagent settings, it gets harder to ensure learning happens at the same speed.</em></li>
+</ul>
+
+<h2 id="okay-suppose-it-works-but-now-its-unstable-and-irreproducible">Okay, suppose it works. But now it’s unstable and irreproducible.</h2>
+<ul>
+  <li>Supervised learning is stable. If you change the hyperparameters a little bit, your performance won’t change that much. In DRL, on the other hand, you might be happy with a model which works 70% of the time.</li>
+  <li>While a 30% failure rate implies a bug in supervised learning, it DRL, you have no idea whether it’s a bug, if your hyperparameters are bad, or if you simply got unlucky…</li>
+  <li>Random chance is a big player in DRL. And the only way to address it is by throwing enough experiments at the problem to drown out the noise.</li>
+  <li><em>When your training algorithm is both sample inefficient and unstable, it heavily slows down your rate of productive research.</em></li>
+  <li><strong>Takeaway</strong> : RL is very sensitive to both initialization and to the dynamics of the training process, because your data is always collected online and the only supervision you get is a single scalar for reward. A policy that randomly stumbles onto good training examples will bootstrap itself much faster than a policy that doesn’t. A policy that fails to discover good training examples in time will collapse towards learning nothing at all, as it becomes more confident that any deviation it tries will fail.</li>
+</ul>
+
+<h2 id="where-do-we-actually-see-drl-in-real-life">Where do we actually see DRL in real life?</h2>
+<ul>
+  <li>DQN, learning from raw pixels to play a large suite of ATARI games, was a breakthrough. AlphaGo and AlphaZero are brilliant achievements as well.</li>
+  <li>But what about deployment in real life (that we know of for sure)?
+    <ul>
+      <li>Recommendation systems still use Contextual Bandits. [<a href="https://research.yahoo.com/publications/5863/contextual-bandit-approach-personalized-news-article-recommendation">source</a>]</li>
+      <li>Google uses it for reducing data center power usage. [<a href="https://deepmind.com/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-40/">source</a>]</li>
+      <li>OpenAI uses it to play DOTA 2, in a limited 1v1 setting, with only the <em>Shadow Fiend</em>. Many would not call this a real-world application, but game-playing is something close to my heart so this ends up here.</li>
+    </ul>
+  </li>
+  <li>Other rumored works include Audi’s self-driving RC cars, Facebook’s chatbots, financial models (trading, etc), but there’s no definite proof.</li>
+  <li><a href="https://www.ijcai.org/proceedings/2017/0772.pdf">Libratus (Brown et al, IJCAI 2017)</a> and <a href="https://arxiv.org/abs/1701.01724">DeepStack (Moravčík et al, 2017)</a> <strong>do not use RL</strong>, but counterfactual regret minimization and clever iterative solving of subgames… #Mythbuster</li>
+  <li><strong>Takeaway</strong> :
+    <blockquote>
+      <p><em>… either deep RL is still a research topic that isn’t robust enough for widespread use, or it’s usable and the people who’ve gotten it to work aren’t publicizing it. The former is more likely.</em></p>
+    </blockquote>
+  </li>
+</ul>
+
+<h2 id="ohkay-so-will-drl-ever-work">Ohkay… So will DRL ever work?</h2>
+<ul>
+  <li>Yes, when some (hopefully, more) of the following conditions are satisfied:
+    <ul>
+      <li>When we have great simulators for generating humongous amounts of experience.</li>
+      <li>When we can break the problem down into (hopefully easier) sub-tasks that can be solved with RL.</li>
+      <li>When we have a clean way to define a learnable, ungameable reward.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="concluding-remarks">Concluding remarks</h2>
+
+<p><strong>Takeaway</strong>: DRL has a long way to go before becoming a plug-and-play technology. So while one could be annoyed with the current state of affairs in DRL (wherein everything is seemingly in shambles), one should also believe in where it could be. As Andrew Ng says,</p>
+<blockquote>
+  <p>[there is] a lot of short-term pessimism, balanced by even more long-term optimism.</p>
+</blockquote>
+
+<p>Go RL!</p>
+
+      </div>
+
+      <hr>
+
+      <div class="date">
+        Written on February 25, 2018 +1617 <br>
+        
+      </div>
+
+      <div class="wrapper">
+      <!-- <button class="myButton" href="Home"> 
+        Back to Home
+      </button> -->
+        <a href="../AllPosts" class="myButton">Back to Posts</a>
+      </div>
+
+    </article>
+
+    <!-- Commented because the AllPosts page has the 'Back to Home' button anyway -->
+    <!-- <div class="wrapper">          
+      <a href="/index.html" class="myButton">Back to Home</a>
+    </div> -->
+
+    <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="http://github.com/abhisheknaik96/abhisheknaik96.github.io">abhisheknaik96.github.io</a> is maintained by <a href="http://github.com/abhisheknaik96">abhisheknaik96</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+
+    </section>
+
+  </body>
+</html>
