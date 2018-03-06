@@ -113,64 +113,6 @@
           <h1 id="contact-me"><a href="#contact-me">Contact Me</a></h1>
 <p>Email ID - <code class="highlighter-rouge">abhisheknaik22296 [at] gmail [dot] com</code></p>
 
-<h1 id="rail--risk-averse-imitation-learning">RAIL : Risk-Averse Imitation Learning</h1>
-
-<p>Codebase for <a href="https://arxiv.org/abs/1707.06658">RAIL : Risk Averse Imitation Learning</a>, presented at the <a href="https://sites.google.com/view/deeprl-symposium-nips2017">NIPS 2017 DRL Symposium</a>.</p>
-
-<hr />
-
-<h2 id="setting-up">Setting up</h2>
-
-<ul>
-  <li>Set up MuJoCo on your machine.</li>
-  <li>Install Anaconda Python 2.7 and set it as the default python:
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"/home/username/anaconda3/bin:</span><span class="nv">$PATH</span><span class="s2">"</span>
-<span class="nv">$ </span>which python
-/home/username/anaconda3/bin/python
-</code></pre></div>    </div>
-    <p>Make changes in the <code class="highlighter-rouge">.bashrc</code> for permanent results.</p>
-  </li>
-  <li>Install the required packages.
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install mujoco-py
-pip install theano
-pip install gym
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>Clone the OpenAI-imitation (GAIL) repository.
-<code class="highlighter-rouge">git clone https://github.com/openai/imitation.git</code></p>
-  </li>
-  <li>
-    <p>Clone the RAIL bitbucket repository.
-<code class="highlighter-rouge">git clone https://abhisheknaik96@bitbucket.org/intelpclfad/rail.git</code></p>
-  </li>
-  <li>Add the path to the RAIL repository to <code class="highlighter-rouge">$PYTHONPATH</code></li>
-  <li>Copy the <code class="highlighter-rouge">expert_policies</code> directory from GAIL to RAIL.</li>
-  <li>Make a new directory called trajectories in the RAIL repository.</li>
-  <li>Generate expert trajectories from an expert policy using <code class="highlighter-rouge">scripts/vis_mj.py</code> <br />
-Example usage :
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@machine:/path/to/RAIL$ python scripts/vis_mj.py expert_policies/modern/log_Hopper-v1_4.h5/snapshots/iter0000500 --count 25 --out trajectories/expert/hopper_25.h5
-</code></pre></div>    </div>
-  </li>
-  <li>Run <code class="highlighter-rouge">scripts/imitate_mj.py</code> with flags set for GAIL/RAIL
-Example usage of RAIL :
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@machine:/path/to/RAIL$ python scripts/imitate_mj.py --mode ga --data trajectories/expert/hopper_25.h5 --limit_trajs 25 --data_subsamp_freq 20 --env_name Hopper-v1 --log training_logs/Hopper/ga_501-iter_Hopper_CVaR_lambda_0.5.h5 --max_iter 501 --useCVaR --CVaR_Lambda_not_trainable --CVaR_Lambda_val_if_not_trainable 0.5`
-</code></pre></div>    </div>
-  </li>
-  <li>Evaluate using <code class="highlighter-rouge">scripts/evaluate.py</code>. It has various functions to calculate metrics like VaR, CVaR as well for plotting different types histograms. <br />
-Example usage :
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python scripts/evaluate.py --trajectories_GAIL trajectories/Hopper/hopper_GAIL_25.h5 --trajectories_CVaR trajectories/Hopper/hopper_RAIL_25.h5 --env_name Hopper --percentile 10 --expert_mean 3666.88 --expert_std 392.908 --trajectories_expert trajectories/Hopper/hopper_expert_25.h5
-</code></pre></div>    </div>
-  </li>
-</ul>
-
-<hr />
-
-<p>In case of any issues, feel free to contact the authors/developers :</p>
-<ul>
-  <li>Anirban Santara (nrbnsntr@gmail.com)</li>
-  <li>Abhishek Naik (abhisheknaik22296@gmail.com)</li>
-</ul>
 
         </div>
 
