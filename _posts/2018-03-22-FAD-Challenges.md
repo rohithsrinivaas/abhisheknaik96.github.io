@@ -9,7 +9,7 @@ tags : oped
 oped : true
 ---
 
-With the recent [fatal Uber crash](OpEd_Uber), I was reading this report documenting a low-speed crash between two autonomous vehicles in the DARPA challenge, which highlights the surprising but crucial (and arguably blatant) challenges that even the state-of-the-art FAD technology faces today:
+With the recent [fatal Uber crash](OpEd_Uber), I was reading [this report](https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.20266) documenting a low-speed crash between two autonomous vehicles in the DARPA challenge, which highlights the surprising but crucial (and arguably blatant) challenges that even the state-of-the-art FAD technology faces today:
 
 ### 1. Clusters of Static Objects    
 
