@@ -3,7 +3,7 @@ layout : post
 title : On the fatal Uber crash :/
 date : 2018-03-20
 time : +0142
-update : 2018-03-22
+update : 2018-03-28
 permalink : posts/OpEd_Uber
 tags : oped
 ---
@@ -24,4 +24,12 @@ So the interior and exterior camera footage [was released](http://www.foxnews.co
 
 Anyway, I'm really interested to know how the LiDAR/RADAR input was being handled by the Uber inm the seconds leading to the crash...   
 
+<br/>
+_Update (28/3/18)_   
+
+So Intel/Mobileye just took a pot-shot at Uber. CEO Amnon Shashua and his team ran their advanced driver assistance systems (ADAS) _on a video of the dashcam video_ and reported clear detection _approximately one second before impact_, using "pattern recognition" and a "free-space" detection module. In his words:
+
+> Recent developments in artificial intelligence, like deep neural networks, have led many to believe that it is now easy to develop a highly accurate object detection system and that the decade-plus experience of incumbent computer vision experts should be discounted. This dynamic has led to many new entrants in the field. While these techniques are helpful, the legacy of identifying and closing hundreds of corner cases, annotating data sets of tens of millions of miles, and going through challenging preproduction validation tests on dozens of production ADAS programs, cannot be skipped. **Experience counts, particularly in safety-critical areas**.    
+
+Professor Amnon also reports that at Mobileye, they obtain true redundancy by building a separate end-to-end camera-only system and a separate LIDAR and radar-only system.
 
