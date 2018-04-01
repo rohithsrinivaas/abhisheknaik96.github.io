@@ -4,6 +4,7 @@ title : Summary - DRL doesn't work, yet.
 date : 2018-02-25
 time : +1617
 permalink : posts/DRLisHard
+tags : summary
 ---
 
 This post is a summary of the extremely insightful blog - [Deep Reinforcement Learning Doesn't Work Yet](https://www.alexirpan.com/2018/02/14/rl-hard.html) - that is making the rounding on twitter since it came out a couple of weeks ago.

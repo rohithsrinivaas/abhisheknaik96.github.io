@@ -8,8 +8,33 @@ permalink: AllPosts
   <nav class="nav__list">
 
     <ul>
-           
-	      <li>
+          
+		<li>
+            <div style="padding-bottom: 10px !important;">
+            <a href="{{ post.permalink }}"> Summaries </a><br>
+                Of interesting papers, articles, and blogs.
+            
+                <ul>
+
+					{% for post in site.posts %}
+		            {% if post.tags contains "summary" %}
+			        <li>
+			                <div style="padding-left: 10px !important;">
+			                <a href="{{ post.permalink }}"> {{ post.title }} </a><br>
+			                {{ post.summary }} 
+			                </div>
+					</li>
+		            {% endif %}
+		            {% endfor %}
+
+		        </ul>
+
+			</div>
+        </li>
+
+        <hr>
+
+	    <li>
                 <div style="padding-bottom: 10px !important;">
                 <a href="{{ post.permalink }}"> OpEds </a><br>
                     My take on things that pique my interest.
@@ -17,7 +42,7 @@ permalink: AllPosts
 	                <ul>
 
 						{% for post in site.posts %}
-			            {% if post.oped == true %}
+			            {% if post.tags contains "oped" %}
 				        <li>
 				                <div style="padding-left: 10px !important;">
 				                <a href="{{ post.permalink }}"> {{ post.title }} </a><br>
@@ -35,8 +60,7 @@ permalink: AllPosts
 			<hr>
  
             {% for post in site.posts %}  <!-- If required, site.posts.reverse -->
-	      	<!-- {{ post.tags }} -->
-	      	{% if post.oped != true %}
+	      	{% if post.tags contains "general" %}
 	      	<li>
               	<div>
               	<a href="{{ post.permalink }}"> {{ post.title }} </a><br>

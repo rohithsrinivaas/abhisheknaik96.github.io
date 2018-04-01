@@ -5,7 +5,6 @@ date : 2018-01-11
 time : +2134
 permalink : posts/OpEd_RewFuncs
 tags : oped
-oped : true
 ---
 
 From a [2003 article](https://www.theguardian.com/science/2003/jul/03/research.science) in The Guardian: 

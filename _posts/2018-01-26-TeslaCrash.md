@@ -5,7 +5,6 @@ date : 2018-01-26
 time : +1445
 permalink : posts/OpEd_Tesla
 tags : oped
-oped : true
 ---
 
 So there was [another Tesla-crash](https://twitter.com/CC_Firefighters/status/955529991319560192) this week. Into a big, red, stationary fire-truck. What?! How can state-of-the-art autonomous driving technology not avoid something as obviously blatant as that?!    

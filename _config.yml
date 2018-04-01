@@ -20,4 +20,6 @@ plugins:
   - jekyll-twitter-plugin
 
 github: [metadata]
+
+markdown: kramdown
 ---

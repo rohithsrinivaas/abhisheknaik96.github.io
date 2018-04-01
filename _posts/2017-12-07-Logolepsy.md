@@ -5,6 +5,7 @@ date : 2017-12-07
 time : +1816
 permalink : posts/Logolepsy
 summary : A test of crazy.
+tags : general
 ---
 
 Hello, world. <br>
