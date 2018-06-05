@@ -7,6 +7,15 @@ layout: default
 
 Here are some selected projects I have done over the course of my undergraduate studies.
 
+## Multi-Agent DRiving Simulator (**MADRaS**)
+- Ongoing
+
+Developed the first open-source, fully-controllable multi-agent driving simulator on top of the popular research testbed TORCS, in order to aid multi-agent research in the autonomous driving domain.     
+
+> Repo - [[Github](https://github.com/abhisheknaik96/MultiAgentTORCS)]    
+> Blog - [[Intel Developer Zone](https://software.intel.com/en-us/articles/madras-a-multi-agent-driving-simulator)]     
+> Media coverage - [[FactorDaily article](https://factordaily.com/multi-agent-driving-sim-madras)]  
+
 ## Driving in Traffic with Deep Reinforcement Learning
 - Jan 2017 – May 2017
 
