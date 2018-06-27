@@ -1,7 +1,7 @@
 ---
 layout : post
 title : Brilliant article on my guide - Professor B. Ravindran :)
-date : 2018-04-06
+date : 2018-06-04
 time : +1134
 permalink : posts/RaviSir_article
 summary : FactorDaily's coverage of Ravi Sir's background and insights towards AI
