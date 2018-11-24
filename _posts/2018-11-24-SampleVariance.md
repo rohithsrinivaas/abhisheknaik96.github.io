@@ -27,10 +27,10 @@ That's where I was mistaken. And now that I've had time to think about it, it's 
 Variance is defined as :
 > _the expectation of the squared deviation of a random variable from its mean_. 
 
-The 'mean' there, that is the _true_ mean of the distribution of the random variable. $$\bar{x}$$, on the other hand, is the _sampled_ mean. Which means every time we compute $(x_i - \bar{x})$, we're off by a factor of  $$(x_i-\mu)$$, where $$\mu$$ is the _true_ mean of the random variable. 
+The 'mean' there, that is the _true_ mean of the distribution of the random variable. $$\bar{x}$$, on the other hand, is the _sampled_ mean. Which means every time we compute $$(x_i - \bar{x})$$, we're off by a factor of  $$(x_i-\mu)$$, where $$\mu$$ is the _true_ mean of the random variable. 
 
 <br>
-Alright, so something is off. But by how much? And how did $N$ get replaced exactly by $N-1$? Time to dive into some math...
+Alright, so something is off. But by how much? And how did $$N$$ get replaced exactly by $$N-1$$? Time to dive into some math...
 
 Let's call the _unbiased_ variance as $$\sigma_{true}$$ and the _biased_ variance as $$\sigma_{biased}$$. Now,
 $$ \begin{aligned}
