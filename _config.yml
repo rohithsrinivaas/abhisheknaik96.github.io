@@ -22,4 +22,9 @@ plugins:
 github: [metadata]
 
 markdown: kramdown
+
+google_analytics: UA-144379474-1
+
+repository: abhisheknaik96/abhisheknaik96.github.io
+
 ---

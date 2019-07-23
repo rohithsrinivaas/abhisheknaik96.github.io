@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
+    {% if site.google_analytics and jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
     <meta charset="UTF-8">
     <title> {{ page.title }} </title>
     <!-- <meta name="description" content="{{ page.description | default: site.description | default: site.github.project_tagline }}"/> -->
@@ -20,7 +23,7 @@
     </section>
 
     <section class="main-content">
-      
+
       {{ content }}
 
 

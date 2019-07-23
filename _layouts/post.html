@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
+    {% if site.google_analytics and jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
     <meta charset="UTF-8">
     <title> {{ page.title }} </title>
     <!-- <meta name="description" content="{{ page.description | default: site.description | default: site.github.project_tagline }}"/> -->
@@ -41,7 +44,7 @@
       </div>
 
       <div class="wrapper">
-      <!-- <button class="myButton" href="Home"> 
+      <!-- <button class="myButton" href="Home">
         Back to Home
       </button> -->
         <a href="../AllPosts" class="myButton">Back to Posts</a>
@@ -50,7 +53,7 @@
     </article>
 
     <!-- Commented because the AllPosts page has the 'Back to Home' button anyway -->
-    <!-- <div class="wrapper">          
+    <!-- <div class="wrapper">
       <a href="/index.html" class="myButton">Back to Home</a>
     </div> -->
 
