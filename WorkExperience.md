@@ -5,6 +5,11 @@ layout: default
 
 # [Teaching Experience](#teachingExperience)
 
+## Reinforcement Learning II (CMPUT609)
+**Jan 2020 - Apr 2020; Dept. of Computing Science, University of Alberta**
+- As one of the Teaching Assistants of this course taken by [Professor Rich Sutton](http://www.incompleteideas.net/), I'll be helping create the course content and guiding research projects for a class of ~30 graduate students.
+
+
 ## Reinforcement Learning (CS6700)
 **Jan 2018 - May 2018; Dept. of CSE, IIT Madras**
 
@@ -16,6 +21,12 @@ layout: default
 
 - As one of Teaching Assistants of this course taken by [Professor Balaraman Ravindran](www.cse.iitm.ac.in/~ravi) and [Professor Mitesh Khapra](https://www.cse.iitm.ac.in/~miteshk), I created and evaluated tutorials, programming assignments, and quizzes for a class of about 90 undergraduates.
 
+
+***
+
+## Reinforcement Learning Specialization on Coursera [[Link](https://www.coursera.org/specializations/reinforcement-learning)]
+**Jan 2019 - Oct 2019; University of Alberta**
+- As one of the 'Subject Matter Expert's, I helped develop programming assignments, multiple-choice quizzes, and slides for the four courses that form the RL Specialization, released in late 2019. There have been more than 10k enrollments till now!
 
 ***
 
@@ -55,3 +66,21 @@ With [Sravan Bodapati](https://www.linkedin.com/in/justsravan/) and [Venkatraman
 
 - Worked on the design and implementation of a machine learning classifier to determine the relevance of a text-block with a bunch of other text-blocks, in a book.
 - The project, now in production, helps Kindle users to directly start reading a book after downloading it, without having to flip through a lot of irrelevant pages.
+
+
+***
+
+
+# [Community Service](#communityService)
+
+
+## Executive Member, [Computer Science Graduate Students' Association](https://sites.google.com/ualberta.ca/csgsa/), University of Alberta
+**Apr 2019 – present**
+
+- Apart from representing the interests of the graduate students to the department, I help organize activities which support their well-being – physically and emotionally; academically and personally – to make University of Alberta a home away from home, especially for international students.
+
+
+## Volunteer, [Centre for Autism Services Alberta](https://centreforautism.ab.ca/)
+**Jan 2019 - present**
+
+- As a part of the Centre's Community and Therapuetic program, I help organize recreational activities for individuals in the age range of 5-20 affected with the Autism Spectrum Disorder. We try to create a fun and supportive atmosphere for the individuals to interact with each other and have a good time.
