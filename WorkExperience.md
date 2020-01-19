@@ -83,4 +83,4 @@ With [Sravan Bodapati](https://www.linkedin.com/in/justsravan/) and [Venkatraman
 ## Volunteer, [Centre for Autism Services Alberta](https://centreforautism.ab.ca/)
 **Jan 2019 - present**
 
-- As a part of the Centre's Community and Therapuetic program, I help organize recreational activities for individuals in the age range of 5-20 affected with the Autism Spectrum Disorder. We try to create a fun and supportive atmosphere for the individuals to interact with each other and have a good time.
+- As a part of the Centre's Community and Therapeutic program, I help organize recreational activities for individuals in the age range of 5-20 affected with the Autism Spectrum Disorder. We try to create a fun and supportive atmosphere for the individuals to interact with each other and have a good time.
