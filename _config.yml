@@ -1,30 +1,28 @@
 ---
 theme: jekyll-theme-cayman
 
-title: [Abhishek Naik]
-description: [Has the mind of a techie and the heart of a wanderer.]
+title: [Rohith Srinivaas M]
+description: [One with a curious mind !]
 
 include: ['_posts', '_pages']
 
 baseurl: ""
 
 social_links:
-  github: "https://github.com/abhisheknaik96/"
-  twitter: "https://twitter.com/anaik96"
-  linkedin: "https://linkedin.com/in/abhisheknaik96"
-  flickr: "https://www.flickr.com/photos/120844874@N04/"
+  github: "https://github.com/rohithsrinivaas/"
+  linkedin: "https://linkedin.com/in/"
   # quora: "https://www.quora.com/profile/Abhishek-Naik-20/"
   # goodreads: "https://www.goodreads.com/user/show/41821528-abhishek-naik"
 
 plugins:
-  - jekyll-twitter-plugin
+  #- jekyll-twitter-plugin
 
 github: [metadata]
 
 markdown: kramdown
 
-google_analytics: UA-144379474-1
+#google_analytics: UA-144379474-1
 
-repository: abhisheknaik96/abhisheknaik96.github.io
+repository: rohithsrinivaas/rohithsrinivaas.github.io
 
 ---

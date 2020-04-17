@@ -5,58 +5,38 @@ layout: default
 
 # [Research](#research)
 
-I am intrigued by how the mind works and learns to perform a myriad of tasks over its lifetime. In particular, I think about intelligence – the computational ability to achieve goals – and how the mind can be modeled as a machine. I believe that making headways in answering this question will benefit humanity significantly and tangibly, for good (in expectation).
+My research interests lies in Computational Engineering and DataSciences. Below some projects I that have completed through coursework and research.
 
-## [Publications and Pre-prints](#publications)
 
-### Discounted Reinforcement Learning is Not an Optimization Problem [[PDF](https://arxiv.org/abs/1910.02140)]
+## [Conference Presentaitons](#publications)
 
-**Abhishek Naik**, Roshan Shariff, Niko Yasui, Richard S Sutton. <br>
-To be presented in the _Optimization Foundations of Reinforcement Learning Workshop, NeuRIPS,_ 2019.
-
-### RAIL: Risk-Averse Imitation Learning [[PDF](https://arxiv.org/abs/1707.06658)]
-
-Anirban Santara<sup>*</sup>, **Abhishek Naik**<sup>*</sup>, Balaraman Ravindran, Dipankar Das, Dheevatsa Mudigere, Sasikanth Avancha, Bharat Kaul.<br>
-In _Proceedings of the 17th International Conference on Autonomous Agents and MultiAgent Systems (AAMAS)_, 2018.
-
-### Identifying User Survival Types via Clustering of Censored Social Network Data [[PDF](https://arxiv.org/abs/1703.03401)]
-
-S Chandra Mouli, **Abhishek Naik**, Bruno Ribeiro, Jennifer Neville. <br>
-CoRR abs/1703.03401, 2017.
+- **Rohith Srinivaas M**, Soumya Sridar, K.C.Hari Kumar, Thermodynamic Modelling of Mo-Zr System using ab initio
+calculations, CALPHAD XLVIII, Singapore, 2 - 7 June 2019.
+- **Rohith Srinivaas M**, Varun Sundar, Arvind Pujari, Vishnu Harshith, Iniyan Ram, Siddharth Nayak, Sai Venkat, Self
+Segregating dustbins: A new approach to grassroots segregation, Shaastra Research Conference, IIT Madras, 3 - 7
+January 2018.
 
 ## [Projects](#projects)
 
-Here are some selected projects I have done over the past few years.
+**Automatic Waste Segregator; Centre For Innovation, IIT Madras (Sep 2017 - Feb 2018)**
 
-### Multi-Agent DRiving Simulator (**MADRaS**)
-- July 2017 – Apr 2018
+- Worked on Computer Vision algorithms and Deep learning models for classification of waste.
+- Achieved accuracy of 88% and 92% respectively by transfer learning over Inception V3 and Inception-V2-resnet.
+- Selected for the international finals of Hult Social Entrepreneurship prize and was featured in [Times of India](https://timesofindia.indiatimes.com/city/chennai/this-smart-bin-is-poised-to-help-solve-the-global-issue-of-waste-management/articleshow/61616385.cms)
 
-Developed the first open-source, fully-controllable multi-agent driving simulator on top of the popular research testbed TORCS, in order to aid multi-agent research in the autonomous driving domain.
+**Hand Gesture Control of Robots; Centre For Innovation, IIT Madras (Sep 2017 - Nov 2017)**
+- Implemented Computer Vision algorithms and Deep learning models for detecting feature locations on egocentric
+hands images.
+- Finetuned YOLO for hand detection and cascaded a bounding box regressor on top of it to extract features
+(finger tips). Established dynamic control of an omnidirectional wheel driven robot using serial communication.
+- Displayed the project in Centre for Innovation -OpenHouse with 5 other computer vision projects.
 
-> Code - [[Repo](https://github.com/abhisheknaik96/MultiAgentTORCS), [Project](https://github.com/madras-simulator/MADRaS)]
-> Blog - [[Intel Developer Zone](https://software.intel.com/en-us/articles/madras-a-multi-agent-driving-simulator)]
-> Media coverage - [[FactorDaily](https://factordaily.com/multi-agent-driving-sim-madras); [Times of India](https://timesofindia.indiatimes.com/city/chennai/driverless-cars-a-possibility-with-iits-simulator/articleshow/66741973.cms); IITM [post](https://www.facebook.com/ReachIITM/photos/a.571931132828344/1927777613910349/?type=3&__xts__%5B0%5D=68.ARACW2ZmXQXqNFb5NqNoXvraY6KGhiUkmYHVJ-1EW_-2s08yxjIHDGhU_CzjfttAl2iSJ8qmxzr4dzXrAws6AemyPhhLO4q9fQKRJvEfl26nb1XbX2uW9ZlTEo3KsZOblzTKB2m66KpP4qlmUaNdhHCd6Y3okd-MGnfuRdUbYptPHOJfSPEc9XZh3p9U1mA35yGXaoH9_S9-VueJm_VnifLhX0TMyVPYWeVeSfJ95nXMZPKTHo_mUB9PfpeCCej2vMhXAKzRQGch3Z0auYgzghWGKmFwaelMX82xOup0amX9ZU7_Al1fFtykcLpINKQ7VfbupdzSREHLsTEoRzgMzx6NQg&__tn__=-R), [video](https://youtu.be/a8TDfG0JYes?t=64)]
+**2D Body-Fitted Grid Generation; Guide:Prof: Sreenivas Jayanti, IIT Madras (Feb 2019 - May 2019)**
+- Worked on Transfinite Interpolation and solving Winslow PDEs using TDMA algorithm for semi-elliptic domain.
+- Implemented Mesh Quality Quantification by computing Orthogonality and Cell Quality Metrics.
+- Generalised the code for any 2D domain which can be integrated with any CFD solver
 
-### Driving in Traffic with Deep Reinforcement Learning
-- Jan 2017 – May 2017
-
-[[Report](https://drive.google.com/file/d/0B2H1r2jYCB02dkZKeW1yQWVILWM/view?usp=sharing)] Used a Deep Learning model to detect and predict features from the on-board dashcam of a car, and trained a Reinforcement Learning model to make driving decisions to successfully [drive in traffic](https://www.youtube.com/playlist?list=PL64VfM4ZEjDvlALjskRm0g4Tfay14_I2r).
-
-### Finding the Salient Object in a Visual Scene
-- Jan 2017 – May 2017
-
-Implemented Boolean Map Saliency for fast detection of the salient objects in a scene. Consistently matched the performances of Deep Learning techniques over various metrics.
-
-### An AI smarter than an 8th Grader
-- Aug 2016 – Nov 2016
-
-Built a question-answering system for 8th-grade multiple-choice science questions, which demonstrated a reasonable level of logical reasoning.
-
-### Light Field Photography
-- Aug 2016 – Nov 2016
-
-Captured the 4D light field from a scene and implemented features like refocusing after the photograph has been taken, looking 'behind' objects. Check it out [**here**](LFI)!
-
-### Vehicle Counter and Segregator
-
-Built a prototype for the institute gate using computer-vision techniques to categorize and keep and count of the flowing traffic in dynamic lighting conditions.
+**Nano-Calphad for Lead-free solder systems- Guide: Prof: K. C. Hari Kumar, IIT Madras (Dec 2017- Mar 2018)**
+- Modelling the surface energy contribution at nanoscale for lead-free solder systems.
+- Calculated the surface energy for line-compounds in nanoscale using Density Functional Theory (DFT).
+- Using OpenCalphad and Fortran to write customised subroutines to compute excess nano-Gibbs energy
